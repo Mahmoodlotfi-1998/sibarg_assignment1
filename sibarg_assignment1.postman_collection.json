@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "b55c71b8-bbe1-4983-89a8-4c88f006e0fe",
+		"name": "sibarg_assignment1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get_all_tips",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "key",
+							"value": "privatekey",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tip/get_all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tip",
+						"get_all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tip_delete_id2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "key",
+							"value": "privatekey",
+							"type": "text"
+						},
+						{
+							"key": "tip_id",
+							"value": "2c",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tip/delete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tip",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tip_update_id1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "key",
+							"value": "privatekey",
+							"type": "text"
+						},
+						{
+							"key": "tip_id",
+							"value": "16",
+							"type": "text"
+						},
+						{
+							"key": "guid",
+							"value": "guild_test_edit",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "title_test_edit",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "description_test_edit",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tip/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tip",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tip_get_id1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "key",
+							"value": "privatekey",
+							"type": "text"
+						},
+						{
+							"key": "tip_id",
+							"value": "16",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tip/get_one",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tip",
+						"get_one"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tip_insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "key",
+							"value": "privatekey",
+							"type": "text"
+						},
+						{
+							"key": "guid",
+							"value": "guild_test",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "title_test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "description_test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tip/insert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tip",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
