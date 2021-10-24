@@ -13,7 +13,9 @@ the postman collection is sibarg_assignment1.postman_collection.json
 
 tip:
 1) i will use paginate for getall Tips model
-2) i will use my hash algoritm for change ip of tips
-3) 
+2) i will use my hash algoritm for change ip of tips.
+
+
+Thank you for reading
 
 
